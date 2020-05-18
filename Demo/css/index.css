@@ -1,0 +1,72 @@
+:root{
+   --primary-color:rgba(13,110,139,0.75);
+   --second-color:rgba(229,148,0,0.9);
+   --overlay-color:rgba(24,39,51,0.85);
+   --menu-speed:1s;
+}
+/*reset*/
+/* flex弹性布局  
+    flex-direction: column;竖直排列 
+     justify-content: center元素在主轴（页面）上居中排列;
+    text-align: center;
+    align-items: center; 居中对齐
+     transition: opacity 1s ease-in-out;透明度1s淡入淡出*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+.container{
+    margin: auto;
+    max-width: 960px;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+.showcase{
+    background: var(--primary-color);
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+.showcase::before{
+    content: "";
+    background: url(../img/beach-foam-landscape-nature-533923.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+.showcase .showcase-container h1{
+    font-size: 4rem;
+}
+.showcase .showcase-container p{
+    font-size: 1.3rem;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    margin-top: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: opacity 1s ease-in-out;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+

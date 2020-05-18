@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+.pix1,.pix2,.pix3,.pix4{
+    background: no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative; 
+    opacity: 0.7;
+    
+}
+.pix-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+   
+}
+.pix-wrap .border{
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    align-self: center;
+    align-items: center;
+    color: beige;
+    background-color: cadetblue;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 200px;
+    opacity: 1;
+    
+}
+.section.section-light{
+    color: #000;
+    background-color: #fff;
+}
+.section.section-dark{
+    color: #fff;
+    background-color: #000;
+}
+.pix1{
+    background-image: url(img/01index-showcase-bg.jpg);
+    min-height: 600px;
+}
+.pix2{
+    background-image: url(img/02index-homeinfo-bg.jpg);
+    min-height: 400px;
+}
+.pix3{
+    background-image: url(img/03about-aboutinfo-img.jpg);
+    min-height: 400px;
+}
+.pix4{
+    background-image: url(img/03about-city.jpg);
+    min-height: 600px;
+}

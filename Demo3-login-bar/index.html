@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="container-login container-login-up">
+            <form action="#">
+                <h1>注册</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-qq"></i></a>
+                    <a href="#" class="social"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="social"><i class="fab fa-weibo"></i></a>
+                </div>
+                <span>请选择以上方式登录或使用您的账号</span>
+                <input type="text" placeholder="姓名">
+                <input type="password" placeholder="密码">
+                <input type="text" placeholder="邮箱">
+                <button>注册</button>
+            </form>
+        </div>
+        <div class="container-login container-login-in">
+            <form action="#">
+                <h1>登录</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-qq"></i></a>
+                    <a href="#" class="social"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="social"><i class="fab fa-weibo"></i></a>
+                </div>
+                <span>请选择以上方式登录或使用您的账号</span>
+                <input type="text" placeholder="邮箱">
+                <input type="password" placeholder="密码">
+                <a href="#">忘记密码?</a>
+                <button>登录</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>已有账号?</h1>
+                    <p>使用您的账号进行登录</p>
+                    <button class="ghost" id="SignIn">登录</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>没有账号?</h1>
+                    <p>立即注册加入我们，和我们一起开始旅程吧！</p>
+                    <button class="ghost" id="SignUp">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+            var signIn=document.getElementById('SignIn');
+            var signup=document.getElementById('SignUp');
+            var container=document.getElementById('container');
+
+            signup.addEventListener('click', () => container.classList.add('right-panel-animate'));
+            signIn.addEventListener('click', () => container.classList.remove('right-panel-animate'));
+
+    </script>
+</body>
+</html>

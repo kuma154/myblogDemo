@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index04.css">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="head">
+            <div class="container">
+                <h1><a href="index.html">Kuma的博客</a></h1>
+                <ul>
+                    <li><a  href="index.html">首页</a></li>
+                    <li><a  href="about.html">关于我们</a></li>
+                    <li><a href="connent.html">联系我们</a></li>
+                    <li><a href="index03.html">阅读更多</a></li>
+                    <li><a href="MI\index.html">小米官网</a></li>  
+                     <li><a class="current" href="index04.html">小案例</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+    </header>
+
+    <div class="container1">
+        <div class="linerLayout">
+
+
+            <div class="item">   
+                <div class="animate1">
+                <div class="inner">
+                   <p>loading</p> 
+                </div>
+            </div>
+            </div>
+
+            <div class="item">
+                <div class="animate2">
+                    <div class="inner2 animate2-an1">
+            
+                    </div>
+                    <div class="inner2 animate2-an2">
+            
+                    </div>
+                    <div class="inner2 animate2-an3">
+            
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="loader1">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="linerLayout">
+            <div class="item">
+                <div class="loader2">
+                 Loading
+                </div>
+            </div>
+            <div class="item">
+                <div class="loader3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">item1</div>
+        </div>
+        <div class="linerLayout">
+            <div class="item">item1</div>
+            <div class="item">item1</div>
+            <div class="item">item1</div>
+        </div>
+        <div class="selete1">
+              <a href="#" onclick='test1()' id="selete">点击切换</a>
+        </div>
+      
+        
+    </div>
+          <div class="main">
+        <h1>欢迎来到Kuma的空间</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere, dolorum reiciendis dicta provident fugit laborum laboriosam praesentium animi consequuntur facilis, excepturi labore est placeat perspiciatis atque? Fuga voluptatibus numquam eum vel dolore consectetur itaque unde, illum magni, dolor porro!</p>
+        
+        <a href="#" onclick='test()' id="selete">点击切换</a>
+    </div>
+    <script>
+        const container=document.querySelector('.container1');
+        const main=document.querySelector('.main');
+        const selete=document.querySelector('#main');
+
+        setTimeout(() => {
+            container.style.display='none';
+            container.style.opacity='0';
+
+            main.style.display='block';
+            main.style.opacity='1';
+        }, 4000);
+        function test(){
+            container.style.display='flex';
+            container.style.opacity='1';
+
+            main.style.display='none';
+            main.style.opacity='0';
+        }
+        function test1(){
+            container.style.display='none';
+            container.style.opacity='0';
+
+            main.style.display='block';
+            main.style.opacity='1';
+        }
+    </script>
+</body>
+</html>

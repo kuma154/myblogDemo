@@ -1,0 +1,293 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+  
+}
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+h1,h2,h3{
+        display: block;
+      padding-bottom: 20px;
+
+}
+a{
+    color:#333;
+   text-decoration: none;
+}
+p{
+    margin:10px 0;
+}
+ul{
+    list-style: none;
+}
+.head{
+        background-color: #333;
+}
+.container{
+    overflow: hidden;
+
+    margin: 0 auto;
+    max-width: 1100px;
+    padding:0 20px;
+}
+.container a{
+    color: white;
+}
+.container h1{
+    padding-top: 20px;
+    float: left;
+}
+.container ul{
+    float: right;
+}
+.container ul li{
+    float: left;
+   
+}
+.container ul li a{
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+.container ul li a:hover,
+.container ul li a.current{
+      background-color: #444;
+    color: #f7c08a;
+}
+
+.text-primary{
+    color: #f7c08a;
+    padding: 0 10px;
+}
+
+.showcase{
+    background: url(../img/01index-showcase-bg.jpg) no-repeat center center/cover;
+    height: 600px;
+    
+}
+.showcase .showcase-box{
+    color: #fff;
+    padding-top: 170px;
+    text-align: center;
+}
+.showcase .showcase-box h1{
+    width: 100%;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.showcase .showcase-box p{
+    font-size: 20px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+.showcase .showcase-box a{
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #333;
+    
+}
+.showcase .showcase-box a:hover{
+    color: #f7c08a;
+    background-color: #444;
+}
+.main{
+    overflow: hidden;
+    width: 100%;
+}
+.main .main-banner{ 
+     width: 50%;
+      height: 400px;
+    background:url(../img/02index-homeinfo-bg.jpg)no-repeat center center/cover;
+    float: left;
+   
+   
+   
+}
+.main .main-message{ 
+    width: 50%;
+    height: 400px;
+    background-color: #333;
+    padding: 0 50px;
+    float: right;
+    color: #fff;
+}
+.main .main-message .main-message-box{
+    padding-top: 70px;
+    text-align: center;
+}
+.main .main-message .main-message-box h1{
+    width: 100%;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.main .main-message .main-message-box p{
+    font-size: 20px;;
+    line-height: 1.7em;
+    padding-bottom: 10px;
+}
+.main .main-message .main-message-box a{
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #fff;
+}
+.more{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.more .more-box{
+    background-color: beige;
+    padding: 50px;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.more .more-box:nth-child(2){
+    background-color: #f7c08a;
+}
+.more .more-box i{
+   padding-bottom: 20px;
+
+}
+.more .more-box p{
+    font-size: 18px;
+    line-height: 1.7em;
+}
+footer{
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #f7f7f7;
+    background-color: #333;
+}
+
+.about-banner{
+  
+    width: 100%;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+.about-banner .about-banner-msg{
+    width: 65%;
+    float: left;
+    padding: 0 30px;
+}
+.about-banner .about-banner-msg h1{
+    width: 100%;
+}
+.about-banner  .about-banner-img{
+    float: right;
+    width: 35%;
+    text-align: right;
+
+
+}
+.about-banner  .about-banner-img img{
+    display: inline-block;
+    
+    height: 200px;
+    background: no-repeat center center/cover;
+    border-radius:85%;
+}
+
+.about-container{
+   
+    background: url(../img/07about-city.jpg) no-repeat center center/cover ;
+    height: 600px;
+    padding: 100px 0 50px 0;
+}
+.about-container h1{
+    padding-bottom: 50px;
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+
+}
+.about-container .about-container-msg{
+    overflow: hidden;
+    padding: 20px 30px;
+    background-color: rgba(255,193,37,0.7);
+    margin-bottom: 30px;
+    border-radius: 5px;
+   
+}
+
+.about-container .about-container-msg .about-container-img{
+    width: 15%;
+    text-align: center;
+    float: left;
+ 
+}
+.about-container .about-container-msg img{
+    display:inline-block ;
+    background: no-repeat center center/cover;
+    height: 100px;
+    width: 100px;
+    
+    border-radius: 50%;
+    
+}
+.about-container .about-container-msg p{
+    float: right;
+    width: 85%;
+    line-height: 1.7em;
+}
+
+.connent-main .text-primary{
+    padding: 0;
+}
+.connent-main h1{
+    width: 100%;
+    font-size: 28px;
+}
+.connent-main>p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.connent-main .connent-form input[type='text'],textarea{
+    width: 100%;
+}
+#con-sub{
+   
+    border: none;
+    width: 100px;
+    padding: 3px 5px;
+    color: #fff;
+    background-color: #333;
+}
+
+.connent-more{
+    width: 100%;
+    padding: 30px 0 20px 0;
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    
+}
+.connent-more .connent-more-box{
+    text-align: center;
+    width: 33.3%;
+    float: left;
+    overflow: hidden;
+}
+.connent-more .connent-more-box i{
+    width: 100%;
+ 
+}
+.connent-more .connent-more-box h1{
+
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 0 30px 0;
+}
+.connent-more .connent-more-box p{
+    font-size: 12px;
+}
